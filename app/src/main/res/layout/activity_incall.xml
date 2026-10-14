@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/launcher_phone_label"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+
+    <TextView
+        android:id="@+id/tvCallee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown_number"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvEncStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enc_status_negotiating"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvHybridStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acoustic_attempt"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMute"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="@string/mute" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSpeaker"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="@string/speaker" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPair"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="@string/pairing_show_code" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEndCall"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/end_call" />
+
+</layout>
