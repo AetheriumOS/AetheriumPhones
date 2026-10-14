@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App name -->
     <string name="app_name">Aetherium Phones</string>
-    <string name="launcher_phone_label">Aetherium Phone</string>
-    <string name="launcher_contacts_label">Aetherium Contacts</string>
+    <string name="launcher_phone_label">电话</string>
+    <string name="launcher_contacts_label">联系人</string>
 
-    <!-- Phone UI strings -->
-    <string name="dial_pad">Dial pad</string>
-    <string name="call">Call</string>
-    <string name="end_call">End call</string>
-    <string name="mute">Mute</string>
-    <string name="speaker">Speaker</string>
-    <string name="contacts">Contacts</string>
-    <string name="unknown_number">Unknown</string>
-    <string name="pairing_show_code">Show pairing code</string>
-    <string name="pairing_generate">Generate code</string>
-    <string name="pairing_enter_code">Enter pairing code</string>
-    <string name="pairing_code_hint">Enter 6‑digit code</string>
-    <string name="pairing_confirm">Confirm</string>
-    <string name="pairing_success">Pairing successful</string>
-    <string name="pairing_already_paired">Already paired</string>
+    <string name="tab_dialpad">拨号盘</string>
+    <string name="tab_contacts">联系人</string>
+    <string name="tab_recent">最近</string>
 
-    <!-- Physical pair -->
-    <string name="phys_pair_title">Fiziksel olarak eşleştir</string>
-    <string name="phys_pair_gen">Kod Oluştur</string>
-    <string name="phys_pair_enter">Kod Gir</string>
-    <string name="phys_pair_code_60">60 haneli eşleştirme kodu</string>
+    <string name="dial_pad">输入号码</string>
+    <string name="call">呼叫</string>
+    <string name="end_call">结束通话</string>
+    <string name="mute">静音</string>
+    <string name="speaker">免提</string>
+    <string name="contacts">联系人</string>
+    <string name="unknown_number">未知</string>
+    <string name="pairing_show_code">显示配对码</string>
+    <string name="pairing_generate">生成代码</string>
+    <string name="pairing_enter_code">输入配对码</string>
+    <string name="pairing_code_hint">输入6位代码</string>
+    <string name="pairing_confirm">确认</string>
+    <string name="pairing_success">配对成功</string>
+    <string name="pairing_already_paired">已配对</string>
 
-    <!-- Encryption status strings -->
-    <string name="enc_status_none">Not encrypted</string>
-    <string name="enc_status_negotiating">Securing call… (handshake)</string>
-    <string name="enc_status_encrypted">End‑to‑end encrypted</string>
-    <string name="enc_status_fallback_unenc">Unencrypted (secure channel not established)</string>
-    <string name="enc_status_voip_upgrade">Upgraded to secure VoIP</string>
+    <string name="phys_pair_title">物理配对</string>
+    <string name="phys_pair_gen">生成代码</string>
+    <string name="phys_pair_enter">输入代码</string>
+    <string name="phys_pair_code_60">60字符配对码</string>
 
-    <!-- Popup messages (as requested) -->
-    <string name="popup_no_internet">The User uses Aetherium Phone. But the Secure Encryption key is not transferred because you or %1$s does not have access to wifi.</string>
-    <string name="popup_enc_success">The user uses Aetherium Phone. Even if its called via SIM, it will be encrypted so operator cant hear it.</string>
-    <string name="popup_used_but_not_now">The user used aetherium phone, but right now it appears its not using. The call will not be encrypted</string>
-    <string name="popup_no_aeth_phone">Aetherium Phone kullanmıyo</string>
+    <string name="enc_status_none">未加密</string>
+    <string name="enc_status_negotiating">正在保护通话…</string>
+    <string name="enc_status_encrypted">端到端加密</string>
+    <string name="enc_status_fallback_unenc">未加密（未建立安全通道）</string>
+    <string name="enc_status_voip_upgrade">已升级为安全 VoIP</string>
 
-    <!-- Acoustic detector strings -->
-    <string name="acoustic_attempt">Attempting acoustic handshake…</string>
-    <string name="dov_attempt">Fallback: Data‑over‑Voice handshake…</string>
-    <string name="hybrid_mode">Mode: Hybrid (Acoustic → Data‑over‑Voice → VoIP)</string>
+    <string name="popup_no_internet">用户正在使用 Aetherium Phone。但您或 %1$s 没有 Wi-Fi 访问权限，因此安全加密密钥未传输。</string>
+    <string name="popup_enc_success">用户正在使用 Aetherium Phone。即使通过 SIM 呼叫，通话也会被加密，运营商无法听到。</string>
+    <string name="popup_used_but_not_now">用户曾使用 Aetherium Phone，但目前似乎未在使用。通话将不会被加密</string>
+    <string name="popup_no_aeth_phone">未在使用 Aetherium Phone</string>
 
-    <!-- Misc -->
-    <string name="search_contacts">Search contacts</string>
-    <string name="no_contacts">No contacts</string>
+    <string name="acoustic_attempt">正在尝试声波握手…</string>
+    <string name="dov_attempt">回退：语音上数据握手…</string>
+    <string name="hybrid_mode">模式：混合（声波 → 语音上数据 → VoIP）</string>
+
+    <string name="search_contacts">搜索联系人</string>
+    <string name="no_contacts">没有联系人</string>
+    <string name="no_recents">没有最近通话</string>
 </resources>

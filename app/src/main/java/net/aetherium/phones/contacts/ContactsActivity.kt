@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import net.aetherium.phones.R
 import net.aetherium.phones.databinding.ActivityContactsBinding
+import net.aetherium.phones.phone.ContactsFragment
 
 class ContactsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityContactsBinding
@@ -14,5 +15,16 @@ class ContactsActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbarContacts)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbarContacts.setNavigationOnClickListener { finish() }
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.contactsContainer, ContactsFragment())
+                .commit()
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

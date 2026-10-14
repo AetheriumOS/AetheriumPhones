@@ -39,7 +39,14 @@
             android:name=".contacts.ContactsActivity"
             android:exported="true"
             android:label="@string/launcher_contacts_label"
-            android:launchMode="singleTask" />
+            android:icon="@mipmap/ic_contacts"
+            android:roundIcon="@mipmap/ic_contacts_round"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".phone.InCallActivity"

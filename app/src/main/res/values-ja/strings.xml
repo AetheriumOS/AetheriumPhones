@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App name -->
     <string name="app_name">Aetherium Phones</string>
-    <string name="launcher_phone_label">Aetherium Phone</string>
-    <string name="launcher_contacts_label">Aetherium Contacts</string>
+    <string name="launcher_phone_label">電話</string>
+    <string name="launcher_contacts_label">連絡先</string>
 
-    <!-- Phone UI strings -->
-    <string name="dial_pad">Dial pad</string>
-    <string name="call">Call</string>
-    <string name="end_call">End call</string>
-    <string name="mute">Mute</string>
-    <string name="speaker">Speaker</string>
-    <string name="contacts">Contacts</string>
-    <string name="unknown_number">Unknown</string>
-    <string name="pairing_show_code">Show pairing code</string>
-    <string name="pairing_generate">Generate code</string>
-    <string name="pairing_enter_code">Enter pairing code</string>
-    <string name="pairing_code_hint">Enter 6‑digit code</string>
-    <string name="pairing_confirm">Confirm</string>
-    <string name="pairing_success">Pairing successful</string>
-    <string name="pairing_already_paired">Already paired</string>
+    <string name="tab_dialpad">ダイヤルパッド</string>
+    <string name="tab_contacts">連絡先</string>
+    <string name="tab_recent">履歴</string>
 
-    <!-- Physical pair -->
-    <string name="phys_pair_title">Fiziksel olarak eşleştir</string>
-    <string name="phys_pair_gen">Kod Oluştur</string>
-    <string name="phys_pair_enter">Kod Gir</string>
-    <string name="phys_pair_code_60">60 haneli eşleştirme kodu</string>
+    <string name="dial_pad">番号を入力</string>
+    <string name="call">発信</string>
+    <string name="end_call">通話終了</string>
+    <string name="mute">ミュート</string>
+    <string name="speaker">スピーカー</string>
+    <string name="contacts">連絡先</string>
+    <string name="unknown_number">不明</string>
+    <string name="pairing_show_code">ペアリングコードを表示</string>
+    <string name="pairing_generate">コードを生成</string>
+    <string name="pairing_enter_code">ペアリングコードを入力</string>
+    <string name="pairing_code_hint">6桁のコードを入力</string>
+    <string name="pairing_confirm">確認</string>
+    <string name="pairing_success">ペアリング成功</string>
+    <string name="pairing_already_paired">ペアリング済み</string>
 
-    <!-- Encryption status strings -->
-    <string name="enc_status_none">Not encrypted</string>
-    <string name="enc_status_negotiating">Securing call… (handshake)</string>
-    <string name="enc_status_encrypted">End‑to‑end encrypted</string>
-    <string name="enc_status_fallback_unenc">Unencrypted (secure channel not established)</string>
-    <string name="enc_status_voip_upgrade">Upgraded to secure VoIP</string>
+    <string name="phys_pair_title">物理ペアリング</string>
+    <string name="phys_pair_gen">コードを生成</string>
+    <string name="phys_pair_enter">コードを入力</string>
+    <string name="phys_pair_code_60">60文字のペアリングコード</string>
 
-    <!-- Popup messages (as requested) -->
-    <string name="popup_no_internet">The User uses Aetherium Phone. But the Secure Encryption key is not transferred because you or %1$s does not have access to wifi.</string>
-    <string name="popup_enc_success">The user uses Aetherium Phone. Even if its called via SIM, it will be encrypted so operator cant hear it.</string>
-    <string name="popup_used_but_not_now">The user used aetherium phone, but right now it appears its not using. The call will not be encrypted</string>
-    <string name="popup_no_aeth_phone">Aetherium Phone kullanmıyo</string>
+    <string name="enc_status_none">暗号化なし</string>
+    <string name="enc_status_negotiating">通話を保護中…</string>
+    <string name="enc_status_encrypted">エンドツーエンド暗号化</string>
+    <string name="enc_status_fallback_unenc">非暗号化（安全なチャネル未確立）</string>
+    <string name="enc_status_voip_upgrade">安全なVoIPにアップグレード</string>
 
-    <!-- Acoustic detector strings -->
-    <string name="acoustic_attempt">Attempting acoustic handshake…</string>
-    <string name="dov_attempt">Fallback: Data‑over‑Voice handshake…</string>
-    <string name="hybrid_mode">Mode: Hybrid (Acoustic → Data‑over‑Voice → VoIP)</string>
+    <string name="popup_no_internet">ユーザーはAetherium Phoneを使用しています。ただし、あなたまたは%1$sがWi-Fiに接続していないため、安全な暗号化キーは転送されませんでした。</string>
+    <string name="popup_enc_success">ユーザーはAetherium Phoneを使用しています。SIMで発信しても暗号化されるため、通信事業者は聞き取れません。</string>
+    <string name="popup_used_but_not_now">ユーザーはAetherium Phoneを使用していましたが、現在は使用していないようです。通話は暗号化されません</string>
+    <string name="popup_no_aeth_phone">Aetherium Phoneは使用されていません</string>
 
-    <!-- Misc -->
-    <string name="search_contacts">Search contacts</string>
-    <string name="no_contacts">No contacts</string>
+    <string name="acoustic_attempt">音響ハンドシェイクを試行中…</string>
+    <string name="dov_attempt">フォールバック：音声上データハンドシェイク…</string>
+    <string name="hybrid_mode">モード：ハイブリッド（音響 → 音声上データ → VoIP）</string>
+
+    <string name="search_contacts">連絡先を検索</string>
+    <string name="no_contacts">連絡先なし</string>
+    <string name="no_recents">最近の通話なし</string>
 </resources>
