@@ -1,69 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/phone_background">
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/searchLayout"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/search_contacts"
-        app:boxBackgroundColor="@color/phone_surface_variant"
-        app:boxCornerRadiusTopEnd="24dp"
-        app:boxCornerRadiusTopStart="24dp"
-        app:boxCornerRadiusBottomEnd="24dp"
-        app:boxCornerRadiusBottomStart="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:imeOptions="actionSearch" />
-    </com.google.android.material.textfield.TextInputLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvContacts"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?android:colorBackground"
         android:clipToPadding="false"
-        android:paddingTop="8dp"
-        android:paddingBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchLayout" />
+        android:paddingBottom="@dimen/floating_action_button_list_bottom_padding" />
 
-    <TextView
-        android:id="@+id/tvEmpty"
-        android:layout_width="wrap_content"
+    <com.fissy.dialer.contactsfragment.FastScroller
+        android:id="@id/fast_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:clipChildren="false"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/fast_scroller_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/fast_scroller_scroll_bar"
+            android:background="@drawable/fast_scroller_container_background"
+            android:gravity="center"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:textSize="48.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/fast_scroller_scroll_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8.0dip"
+            android:paddingEnd="16.0dip"
+            android:src="@drawable/fast_scroller_scroll_bar" />
+    </com.fissy.dialer.contactsfragment.FastScroller>
+
+    <include layout="@layout/header" />
+
+    <com.fissy.dialer.widget.EmptyContentView
+        android:id="@id/empty_list_view"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/no_contacts"
-        android:textColor="@color/google_grey"
-        android:textSize="16sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:contentDescription="@string/tab_contacts"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/google_blue"
-        app:tint="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
