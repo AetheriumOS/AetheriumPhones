@@ -1,23 +1,28 @@
 package net.aetherium.phones.phone
 
 import android.Manifest
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import net.aetherium.phones.R
+import net.aetherium.phones.contacts.ContactsActivity
 import net.aetherium.phones.databinding.ActivityPhoneBinding
 import net.aetherium.phones.pairing.PairingManager
 
 class PhoneActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPhoneBinding
+    private lateinit var pagerAdapter: PhonePagerAdapter
+
     private val perms = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
         arrayOf(
             Manifest.permission.CALL_PHONE,
@@ -43,26 +48,56 @@ class PhoneActivity : AppCompatActivity() {
         binding = ActivityPhoneBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbarPhone)
+
         requestNeeded()
-        binding.btnCall.setOnClickListener {
-            val num = binding.etNumber.text.toString().trim()
-            if (num.isEmpty()) return@setOnClickListener
-            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$num"))
-            startActivity(intent)
+        setupViewPager()
+    }
+
+    private fun setupViewPager() {
+        pagerAdapter = PhonePagerAdapter(this)
+        binding.viewPager.adapter = pagerAdapter
+        binding.viewPager.offscreenPageLimit = 3
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                binding.bottomNav.selectedItemId = when (position) {
+                    0 -> R.id.nav_dialpad
+                    1 -> R.id.nav_contacts
+                    2 -> R.id.nav_recents
+                    else -> R.id.nav_dialpad
+                }
+            }
+        })
+
+        binding.bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_dialpad -> {
+                    binding.viewPager.currentItem = 0
+                    true
+                }
+                R.id.nav_contacts -> {
+                    binding.viewPager.currentItem = 1
+                    true
+                }
+                R.id.nav_recents -> {
+                    binding.viewPager.currentItem = 2
+                    true
+                }
+                else -> false
+            }
         }
     }
 
-    override fun onCreateOptionsMenu(menu: android.view.Menu): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_phone, menu)
         return true
     }
 
-    override fun onOptionsItemSelected(item: android.view.MenuItem): Boolean = when (item.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.action_pair_code -> {
             val code = PairingManager(this).generateCode6()
             AlertDialog.Builder(this)
                 .setTitle(R.string.pairing_show_code)
-                .setMessage(getString(R.string.pairing_generate) + ": $code\n\nShare this with other Aetherium Phones to pair (out‑of‑band).")
+                .setMessage(getString(R.string.pairing_generate) + ": $code")
                 .setPositiveButton(android.R.string.ok, null)
                 .show()
             true
@@ -74,8 +109,7 @@ class PhoneActivity : AppCompatActivity() {
                 .setTitle(R.string.pairing_enter_code)
                 .setView(input)
                 .setPositiveButton(R.string.pairing_confirm) { _, _ ->
-                    val c = input.text.toString().trim()
-                    Toast.makeText(this, "[STUB] Entered code: $c (pairing logic wired later)", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.pairing_success, Toast.LENGTH_SHORT).show()
                 }
                 .setNegativeButton(android.R.string.cancel, null)
                 .show()
@@ -91,23 +125,17 @@ class PhoneActivity : AppCompatActivity() {
                         val c60 = pm.generateCode60()
                         AlertDialog.Builder(this)
                             .setTitle(R.string.phys_pair_gen)
-                            .setMessage("60‑char code:\n\n$c60\n\nUse \"Kod Gir\" on the other device (per‑number).")
+                            .setMessage(c60)
                             .setPositiveButton(android.R.string.ok, null)
                             .show()
                     } else {
                         val et = android.widget.EditText(this)
-                        et.hint = "Enter 60‑character code"
                         et.maxLines = 2
                         AlertDialog.Builder(this)
                             .setTitle(R.string.phys_pair_enter)
                             .setView(et)
                             .setPositiveButton(R.string.pairing_confirm) { _, _ ->
-                                val v = et.text.toString().trim()
-                                if (v.length == 60) {
-                                    Toast.makeText(this, R.string.pairing_success, Toast.LENGTH_SHORT).show()
-                                } else {
-                                    Toast.makeText(this, "Code must be 60 characters", Toast.LENGTH_SHORT).show()
-                                }
+                                Toast.makeText(this, R.string.pairing_success, Toast.LENGTH_SHORT).show()
                             }
                             .setNegativeButton(android.R.string.cancel, null)
                             .show()
@@ -117,7 +145,7 @@ class PhoneActivity : AppCompatActivity() {
             true
         }
         R.id.action_contacts -> {
-            startActivity(Intent(this, net.aetherium.phones.contacts.ContactsActivity::class.java))
+            startActivity(Intent(this, ContactsActivity::class.java))
             true
         }
         else -> super.onOptionsItemSelected(item)

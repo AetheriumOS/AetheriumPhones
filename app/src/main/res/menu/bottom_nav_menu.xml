@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dialpad"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="@string/tab_dialpad" />
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/tab_contacts" />
+    <item
+        android:id="@+id/nav_recents"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="@string/tab_recent" />
+</menu>
