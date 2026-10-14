@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="phone_background">#202124</color>
+    <color name="phone_surface">#292A2D</color>
+    <color name="phone_on_surface">#E8EAED</color>
+    <color name="phone_surface_variant">#3C4043</color>
+    <color name="dialpad_key">#2D2E31</color>
+    <color name="dialpad_key_pressed">#3C4043</color>
+    <color name="call_button">#5BB974</color>
+    <color name="end_call_button">#F28B82</color>
+    <color name="ripple_color">#8AB4F840</color>
+</resources>

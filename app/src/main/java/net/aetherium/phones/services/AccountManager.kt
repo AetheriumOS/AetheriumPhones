@@ -13,7 +13,7 @@ object AccountManager {
             mk,
             EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
             EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-        )
+        ) as EncryptedSharedPreferences
     }
     fun getOwnAccountId(ctx: Context): String? {
         val possible = listOf("aetherium_services_account", "aetherium_services", "aetherium_account", "aetherium_auth")

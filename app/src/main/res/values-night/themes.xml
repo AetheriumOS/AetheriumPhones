@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.AetheriumPhones" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">#1F6BFF</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="android:statusBarColor">?attr/colorSurface</item>
-        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="colorPrimary">@color/google_blue_light</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@color/phone_background</item>
+        <item name="android:statusBarColor">@color/phone_surface</item>
+        <item name="android:navigationBarColor">@color/phone_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="materialButtonStyle">@style/Widget.AetheriumPhone.Button</item>
     </style>
 </resources>
