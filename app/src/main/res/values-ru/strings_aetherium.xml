@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Russian) -->
+    <string name="aetherium_secure_title">Aetherium Телефон</string>
+    <string name="aetherium_contacts_label">Контакты</string>
+    <string name="main_menu_aetherium">Защищённые вызовы Aetherium</string>
+
+    <string name="aetherium_status_ready">Защищённые вызовы включены</string>
+    <string name="aetherium_status_ready_desc">Вызовы другим пользователям Aetherium Телефон защищены сквозным шифрованием, даже если они идут через обычное SIM-соединение.</string>
+    <string name="aetherium_status_offline">Вы не вошли</string>
+    <string name="aetherium_status_offline_desc">Войдите в AetheriumServices, чтобы этот телефон мог обмениваться ключами шифрования и совершать защищённые вызовы.</string>
+    <string name="aetherium_account_id">Аккаунт: %1$s</string>
+    <string name="aetherium_account_missing">На этом устройстве не найдена учётная запись AetheriumServices.</string>
+
+    <string name="aetherium_pairing_header">СОПРЯЖЕНИЕ</string>
+    <string name="aetherium_pairing_hint">Код сопряжения</string>
+    <string name="aetherium_generate_6">6-значный код</string>
+    <string name="aetherium_generate_60">Код из 60 символов</string>
+    <string name="aetherium_pair_action">Использовать этот код</string>
+    <string name="aetherium_enter_code">Сначала введите код</string>
+    <string name="aetherium_pair_saved">Код сопряжения сохранён</string>
+    <string name="aetherium_code_generated_6">Ваш код: %1$s</string>
+    <string name="aetherium_code_generated_60">Создан код сопряжения из 60 символов</string>
+
+    <string name="aetherium_transport_header">ТРАНСПОРТ</string>
+    <string name="aetherium_transport_idle">Тест транспорта ещё не проводился.</string>
+    <string name="aetherium_transport_searching">Поиск защищённого транспорта…</string>
+    <string name="aetherium_transport_test">Проверить защищённый транспорт</string>
+    <string name="aetherium_transport_acoustic">Доступен акустический транспорт (18-22 кГц)</string>
+    <string name="aetherium_transport_dov">Доступен транспорт «данные поверх голоса»</string>
+    <string name="aetherium_transport_voip">Доступен транспорт VoIP</string>
+
+    <string name="aetherium_popup_no_internet">Пользователь использует Aetherium Телефон. Но ключ защищённого шифрования не передан, так как у вас или у (%1$s) нет доступа к wifi.</string>
+    <string name="aetherium_popup_success">Пользователь использует Aetherium Телефон. Даже при вызове через SIM он будет зашифрован, поэтому оператор не услышит разговор.</string>
+    <string name="aetherium_popup_stale">Пользователь использовал Aetherium Телефон, но сейчас, похоже, не использует его. Вызов не будет зашифрован.</string>
+</resources>

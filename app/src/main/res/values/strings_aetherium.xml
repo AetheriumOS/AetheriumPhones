@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling -->
+    <string name="aetherium_secure_title">Aetherium Phone</string>
+    <string name="aetherium_contacts_label">Contacts</string>
+    <string name="main_menu_aetherium">Aetherium secure calling</string>
+
+    <string name="aetherium_status_ready">Secure calling is on</string>
+    <string name="aetherium_status_ready_desc">Calls to other Aetherium Phone users are end to end encrypted, even when they go over a normal SIM connection.</string>
+    <string name="aetherium_status_offline">Not signed in</string>
+    <string name="aetherium_status_offline_desc">Sign in to AetheriumServices so this phone can exchange encryption keys and place secure calls.</string>
+    <string name="aetherium_account_id">Account: %1$s</string>
+    <string name="aetherium_account_missing">No AetheriumServices account found on this device.</string>
+
+    <string name="aetherium_pairing_header">PAIRING</string>
+    <string name="aetherium_pairing_hint">Pairing code</string>
+    <string name="aetherium_generate_6">6 digit code</string>
+    <string name="aetherium_generate_60">60 character code</string>
+    <string name="aetherium_pair_action">Use this code</string>
+    <string name="aetherium_enter_code">Enter a code first</string>
+    <string name="aetherium_pair_saved">Pairing code saved</string>
+    <string name="aetherium_code_generated_6">Your code: %1$s</string>
+    <string name="aetherium_code_generated_60">60 character pairing code generated</string>
+
+    <string name="aetherium_transport_header">TRANSPORT</string>
+    <string name="aetherium_transport_idle">No transport test has been run yet.</string>
+    <string name="aetherium_transport_searching">Listening for a secure transport…</string>
+    <string name="aetherium_transport_test">Test secure transport</string>
+    <string name="aetherium_transport_acoustic">Acoustic (18-22 kHz) transport available</string>
+    <string name="aetherium_transport_dov">Data-over-Voice transport available</string>
+    <string name="aetherium_transport_voip">VoIP transport available</string>
+
+    <!-- Exact Aetherium call notices. %1$s is the registered contact name. -->
+    <string name="aetherium_popup_no_internet">The User uses Aetherium Phone. But the Secure Encryption key is not transferred because you or (%1$s) does ont have access to wifi.</string>
+    <string name="aetherium_popup_success">The user uses Aetherium Phone. Even if its called via SIM, it will be encrypted so operator cant hear it.</string>
+    <string name="aetherium_popup_stale">The user used aetherium phone, But right now, it appears its not using. The call will not be encrypted</string>
+</resources>

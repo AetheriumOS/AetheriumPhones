@@ -499,6 +499,10 @@ public class MainSearchController implements SearchBarListener {
             activity.startActivity(new Intent(activity, DialerSettingsActivity.class));
             Logger.get(activity).logScreenView(ScreenEvent.Type.SETTINGS, activity);
             return true;
+        } else if (menuItem.getItemId() == R.id.aetherium_settings) {
+            activity.startActivity(
+                new Intent(activity, com.fissy.dialer.aetherium.AetheriumSecureActivity.class));
+            return true;
         } else if (menuItem.getItemId() == R.id.clear_frequents) {
             ClearFrequentsDialog.show(activity.getFragmentManager());
             Logger.get(activity).logScreenView(ScreenEvent.Type.CLEAR_FREQUENTS, activity);

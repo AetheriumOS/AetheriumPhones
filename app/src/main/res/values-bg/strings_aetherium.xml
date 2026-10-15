@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Bulgarian) -->
+    <string name="aetherium_secure_title">Aetherium Телефон</string>
+    <string name="aetherium_contacts_label">Контакти</string>
+    <string name="main_menu_aetherium">Защитени разговори Aetherium</string>
+
+    <string name="aetherium_status_ready">Защитените разговори са включени</string>
+    <string name="aetherium_status_ready_desc">Разговорите към други потребители на Aetherium Телефон са криптирани от край до край, дори когато минават през нормална SIM връзка.</string>
+    <string name="aetherium_status_offline">Не сте влезли</string>
+    <string name="aetherium_status_offline_desc">Влезте в AetheriumServices, за да може този телефон да обменя ключове за криптиране и да осъществява защитени разговори.</string>
+    <string name="aetherium_account_id">Акаунт: %1$s</string>
+    <string name="aetherium_account_missing">На това устройство не е намерен акаунт в AetheriumServices.</string>
+
+    <string name="aetherium_pairing_header">СДВОЯВАНЕ</string>
+    <string name="aetherium_pairing_hint">Код за сдвояване</string>
+    <string name="aetherium_generate_6">6-цифрен код</string>
+    <string name="aetherium_generate_60">Код от 60 знака</string>
+    <string name="aetherium_pair_action">Използвай този код</string>
+    <string name="aetherium_enter_code">Първо въведете код</string>
+    <string name="aetherium_pair_saved">Кодът за сдвояване е запазен</string>
+    <string name="aetherium_code_generated_6">Вашият код: %1$s</string>
+    <string name="aetherium_code_generated_60">Генериран е код за сдвояване от 60 знака</string>
+
+    <string name="aetherium_transport_header">ТРАНСПОРТ</string>
+    <string name="aetherium_transport_idle">Все още не е извършен тест на транспорта.</string>
+    <string name="aetherium_transport_searching">Търсене на защитен транспорт…</string>
+    <string name="aetherium_transport_test">Тествай защитения транспорт</string>
+    <string name="aetherium_transport_acoustic">Наличен е акустичен транспорт (18-22 kHz)</string>
+    <string name="aetherium_transport_dov">Наличен е транспорт данни-върху-глас</string>
+    <string name="aetherium_transport_voip">Наличен е VoIP транспорт</string>
+
+    <string name="aetherium_popup_no_internet">Потребителят използва Aetherium Телефон. Но ключът за защитно криптиране не се прехвърля, защото вие или (%1$s) нямате достъп до wifi.</string>
+    <string name="aetherium_popup_success">Потребителят използва Aetherium Телефон. Дори когато е повикан през SIM, разговорът ще бъде криптиран, така че операторът не може да го чуе.</string>
+    <string name="aetherium_popup_stale">Потребителят използваше Aetherium Телефон, но в момента изглежда не го използва. Разговорът няма да бъде криптиран.</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium UI palette, dark. -->
+    <color name="aetherium_primary">#A8C7FA</color>
+    <color name="aetherium_on_primary">#062E6F</color>
+    <color name="aetherium_surface">#131314</color>
+    <color name="aetherium_card">#1E1F20</color>
+    <color name="aetherium_on_surface">#E3E3E3</color>
+    <color name="aetherium_on_surface_variant">#C4C7C5</color>
+    <color name="aetherium_status_green">#8EDC9A</color>
+    <color name="aetherium_status_grey">#8E918F</color>
+</resources>

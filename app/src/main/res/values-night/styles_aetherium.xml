@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Aetherium" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/aetherium_primary</item>
+        <item name="colorOnPrimary">@color/aetherium_on_primary</item>
+        <item name="colorSurface">@color/aetherium_surface</item>
+        <item name="colorOnSurface">@color/aetherium_on_surface</item>
+        <item name="colorSurfaceVariant">@color/aetherium_card</item>
+        <item name="colorOnSurfaceVariant">@color/aetherium_on_surface_variant</item>
+        <item name="android:colorBackground">@color/aetherium_surface</item>
+        <item name="android:statusBarColor">@color/aetherium_surface</item>
+        <item name="android:navigationBarColor">@color/aetherium_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

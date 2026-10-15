@@ -19,4 +19,8 @@
         android:title="@string/nui_simulator_submenu_label"
         android:visible="false"
         app:showAsAction="collapseActionView" />
+    <item
+        android:id="@id/aetherium_settings"
+        android:title="@string/main_menu_aetherium"
+        app:showAsAction="collapseActionView" />
 </menu>

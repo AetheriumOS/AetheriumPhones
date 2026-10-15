@@ -56,6 +56,16 @@
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
 
+    <!-- Aetherium secure calling -->
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+
+    <!-- Discover the AetheriumServices account package on Android 11+. -->
+    <queries>
+        <package android:name="net.aetherium.services" />
+    </queries>
+
     <uses-feature
         android:name="android.hardware.camera.any"
         android:required="false" />
@@ -480,5 +490,49 @@
             android:authorities="com.fissy.dialer.lookup"
             android:exported="false"
             android:multiprocess="false" />
+
+        <!-- ================= Aetherium secure calling ================= -->
+
+        <activity
+            android:name="com.fissy.dialer.aetherium.AetheriumSecureActivity"
+            android:exported="true"
+            android:label="@string/aetherium_secure_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Aetherium" />
+
+        <service
+            android:name="com.fissy.dialer.aetherium.AetheriumConnectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+
+        <!-- stubbed permissions string so the app is only offered as its own dialer -->
+        <receiver
+            android:name="com.fissy.dialer.aetherium.AetheriumCallStateReceiver"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Aetherium Contacts: second launcher entry that opens the Contacts tab -->
+        <activity
+            android:name="com.fissy.dialer.aetherium.AetheriumContactsAlias"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_contacts_launcher"
+            android:label="@string/aetherium_contacts_label"
+            android:noHistory="true"
+            android:roundIcon="@mipmap/ic_contacts_launcher"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

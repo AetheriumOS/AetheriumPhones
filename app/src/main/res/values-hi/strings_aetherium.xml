@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Hindi) -->
+    <string name="aetherium_secure_title">Aetherium फ़ोन</string>
+    <string name="aetherium_contacts_label">संपर्क</string>
+    <string name="main_menu_aetherium">Aetherium सुरक्षित कॉलिंग</string>
+
+    <string name="aetherium_status_ready">सुरक्षित कॉलिंग चालू है</string>
+    <string name="aetherium_status_ready_desc">अन्य Aetherium फ़ोन उपयोगकर्ताओं को किए गए कॉल सामान्य SIM कनेक्शन पर जाने पर भी एंड-टू-एंड एन्क्रिप्टेड होते हैं।</string>
+    <string name="aetherium_status_offline">साइन इन नहीं हैं</string>
+    <string name="aetherium_status_offline_desc">इस फ़ोन को एन्क्रिप्शन कुंजियाँ साझा करने और सुरक्षित कॉल करने देने के लिए AetheriumServices में साइन इन करें।</string>
+    <string name="aetherium_account_id">खाता: %1$s</string>
+    <string name="aetherium_account_missing">इस डिवाइस पर कोई AetheriumServices खाता नहीं मिला।</string>
+
+    <string name="aetherium_pairing_header">पेयरिंग</string>
+    <string name="aetherium_pairing_hint">पेयरिंग कोड</string>
+    <string name="aetherium_generate_6">6 अंकों का कोड</string>
+    <string name="aetherium_generate_60">60 अक्षरों का कोड</string>
+    <string name="aetherium_pair_action">यह कोड इस्तेमाल करें</string>
+    <string name="aetherium_enter_code">पहले कोई कोड दर्ज करें</string>
+    <string name="aetherium_pair_saved">पेयरिंग कोड सहेजा गया</string>
+    <string name="aetherium_code_generated_6">आपका कोड: %1$s</string>
+    <string name="aetherium_code_generated_60">60 अक्षरों का पेयरिंग कोड बनाया गया</string>
+
+    <string name="aetherium_transport_header">ट्रांसपोर्ट</string>
+    <string name="aetherium_transport_idle">अभी तक कोई ट्रांसपोर्ट परीक्षण नहीं किया गया।</string>
+    <string name="aetherium_transport_searching">सुरक्षित ट्रांसपोर्ट खोजा जा रहा है…</string>
+    <string name="aetherium_transport_test">सुरक्षित ट्रांसपोर्ट जाँचें</string>
+    <string name="aetherium_transport_acoustic">ध्वनिक (18-22 kHz) ट्रांसपोर्ट उपलब्ध</string>
+    <string name="aetherium_transport_dov">डेटा-ओवर-वॉइस ट्रांसपोर्ट उपलब्ध</string>
+    <string name="aetherium_transport_voip">VoIP ट्रांसपोर्ट उपलब्ध</string>
+
+    <string name="aetherium_popup_no_internet">उपयोगकर्ता Aetherium फ़ोन इस्तेमाल करता है। लेकिन सुरक्षित एन्क्रिप्शन कुंजी स्थानांतरित नहीं होती क्योंकि आपके या (%1$s) के पास wifi की पहुँच नहीं है।</string>
+    <string name="aetherium_popup_success">उपयोगकर्ता Aetherium फ़ोन इस्तेमाल करता है। SIM से कॉल होने पर भी यह एन्क्रिप्टेड रहेगा, इसलिए ऑपरेटर इसे सुन नहीं सकता।</string>
+    <string name="aetherium_popup_stale">उपयोगकर्ता Aetherium फ़ोन इस्तेमाल करता था, लेकिन अब ऐसा लगता है कि वह इसका उपयोग नहीं कर रहा। कॉल एन्क्रिप्टेड नहीं होगी।</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Turkish) -->
+    <string name="aetherium_secure_title">Aetherium Telefon</string>
+    <string name="aetherium_contacts_label">Kişiler</string>
+    <string name="main_menu_aetherium">Aetherium güvenli arama</string>
+
+    <string name="aetherium_status_ready">Güvenli arama açık</string>
+    <string name="aetherium_status_ready_desc">Diğer Aetherium Telefon kullanıcılarına yapılan aramalar, normal SIM bağlantısı üzerinden gitse bile uçtan uca şifrelenir.</string>
+    <string name="aetherium_status_offline">Oturum açılmadı</string>
+    <string name="aetherium_status_offline_desc">Bu telefonun şifreleme anahtarlarını paylaşabilmesi ve güvenli arama yapabilmesi için AetheriumServices\'e oturum açın.</string>
+    <string name="aetherium_account_id">Hesap: %1$s</string>
+    <string name="aetherium_account_missing">Bu cihazda AetheriumServices hesabı bulunamadı.</string>
+
+    <string name="aetherium_pairing_header">EŞLEŞTİRME</string>
+    <string name="aetherium_pairing_hint">Eşleştirme kodu</string>
+    <string name="aetherium_generate_6">6 haneli kod</string>
+    <string name="aetherium_generate_60">60 karakterlik kod</string>
+    <string name="aetherium_pair_action">Bu kodu kullan</string>
+    <string name="aetherium_enter_code">Önce bir kod girin</string>
+    <string name="aetherium_pair_saved">Eşleştirme kodu kaydedildi</string>
+    <string name="aetherium_code_generated_6">Kodunuz: %1$s</string>
+    <string name="aetherium_code_generated_60">60 karakterlik eşleştirme kodu oluşturuldu</string>
+
+    <string name="aetherium_transport_header">TAŞIMA</string>
+    <string name="aetherium_transport_idle">Henüz taşıma testi yapılmadı.</string>
+    <string name="aetherium_transport_searching">Güvenli taşıma aranıyor…</string>
+    <string name="aetherium_transport_test">Güvenli taşımayı test et</string>
+    <string name="aetherium_transport_acoustic">Akustik (18-22 kHz) taşıma kullanılabilir</string>
+    <string name="aetherium_transport_dov">Ses-üzerinden-Veri taşıması kullanılabilir</string>
+    <string name="aetherium_transport_voip">VoIP taşıması kullanılabilir</string>
+
+    <string name="aetherium_popup_no_internet">Kullanıcı Aetherium Telefon kullanıyor. Ancak sizin veya (%1$s) wifi erişiminiz olmadığından Güvenli Şifreleme anahtarı aktarılamadı.</string>
+    <string name="aetherium_popup_success">Kullanıcı Aetherium Telefon kullanıyor. SIM üzerinden aransa bile şifrelenecek, böylece operatör duyamaz.</string>
+    <string name="aetherium_popup_stale">Kullanıcı Aetherium telefon kullanıyordu, ancak şu anda kullanmıyor gibi görünüyor. Arama şifrelenmeyecek.</string>
+</resources>

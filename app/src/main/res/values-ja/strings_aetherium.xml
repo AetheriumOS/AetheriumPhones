@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Japanese) -->
+    <string name="aetherium_secure_title">Aetherium 電話</string>
+    <string name="aetherium_contacts_label">連絡先</string>
+    <string name="main_menu_aetherium">Aetherium 安全な通話</string>
+
+    <string name="aetherium_status_ready">安全な通話がオンです</string>
+    <string name="aetherium_status_ready_desc">他の Aetherium 電話ユーザーへの通話は、通常の SIM 接続を経由する場合でもエンドツーエンドで暗号化されます。</string>
+    <string name="aetherium_status_offline">サインインしていません</string>
+    <string name="aetherium_status_offline_desc">この電話が暗号化キーを交換し、安全な通話を行えるように、AetheriumServices にサインインしてください。</string>
+    <string name="aetherium_account_id">アカウント: %1$s</string>
+    <string name="aetherium_account_missing">このデバイスに AetheriumServices アカウントが見つかりません。</string>
+
+    <string name="aetherium_pairing_header">ペアリング</string>
+    <string name="aetherium_pairing_hint">ペアリングコード</string>
+    <string name="aetherium_generate_6">6桁のコード</string>
+    <string name="aetherium_generate_60">60文字のコード</string>
+    <string name="aetherium_pair_action">このコードを使用</string>
+    <string name="aetherium_enter_code">先にコードを入力してください</string>
+    <string name="aetherium_pair_saved">ペアリングコードを保存しました</string>
+    <string name="aetherium_code_generated_6">あなたのコード: %1$s</string>
+    <string name="aetherium_code_generated_60">60文字のペアリングコードを生成しました</string>
+
+    <string name="aetherium_transport_header">トランスポート</string>
+    <string name="aetherium_transport_idle">トランスポートテストはまだ実行されていません。</string>
+    <string name="aetherium_transport_searching">安全なトランスポートを検索中…</string>
+    <string name="aetherium_transport_test">安全なトランスポートをテスト</string>
+    <string name="aetherium_transport_acoustic">音響（18-22 kHz）トランスポートが利用可能</string>
+    <string name="aetherium_transport_dov">データオーバーボイストランスポートが利用可能</string>
+    <string name="aetherium_transport_voip">VoIP トランスポートが利用可能</string>
+
+    <string name="aetherium_popup_no_internet">このユーザーは Aetherium 電話を使用しています。ただし、あなたまたは (%1$s) が Wi-Fi にアクセスできないため、安全な暗号化キーは転送されません。</string>
+    <string name="aetherium_popup_success">このユーザーは Aetherium 電話を使用しています。SIM 経由で発信しても暗号化されるため、通信事業者が聞き取ることはできません。</string>
+    <string name="aetherium_popup_stale">このユーザーは Aetherium 電話を使用していましたが、現在は使用していないようです。通話は暗号化されません。</string>
+</resources>

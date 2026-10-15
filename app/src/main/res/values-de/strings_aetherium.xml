@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (German) -->
+    <string name="aetherium_secure_title">Aetherium Telefon</string>
+    <string name="aetherium_contacts_label">Kontakte</string>
+    <string name="main_menu_aetherium">Aetherium sichere Anrufe</string>
+
+    <string name="aetherium_status_ready">Sichere Anrufe sind aktiviert</string>
+    <string name="aetherium_status_ready_desc">Anrufe zu anderen Aetherium Telefon-Nutzern sind Ende-zu-Ende-verschlüsselt, auch wenn sie über eine normale SIM-Verbindung laufen.</string>
+    <string name="aetherium_status_offline">Nicht angemeldet</string>
+    <string name="aetherium_status_offline_desc">Melden Sie sich bei AetheriumServices an, damit dieses Telefon Verschlüsselungsschlüssel austauschen und sichere Anrufe tätigen kann.</string>
+    <string name="aetherium_account_id">Konto: %1$s</string>
+    <string name="aetherium_account_missing">Auf diesem Gerät wurde kein AetheriumServices-Konto gefunden.</string>
+
+    <string name="aetherium_pairing_header">KOPPLUNG</string>
+    <string name="aetherium_pairing_hint">Kopplungscode</string>
+    <string name="aetherium_generate_6">6-stelliger Code</string>
+    <string name="aetherium_generate_60">60-stelliger Code</string>
+    <string name="aetherium_pair_action">Diesen Code verwenden</string>
+    <string name="aetherium_enter_code">Zuerst einen Code eingeben</string>
+    <string name="aetherium_pair_saved">Kopplungscode gespeichert</string>
+    <string name="aetherium_code_generated_6">Ihr Code: %1$s</string>
+    <string name="aetherium_code_generated_60">60-stelliger Kopplungscode erstellt</string>
+
+    <string name="aetherium_transport_header">ÜBERTRAGUNG</string>
+    <string name="aetherium_transport_idle">Es wurde noch kein Übertragungstest durchgeführt.</string>
+    <string name="aetherium_transport_searching">Suche nach sicherer Übertragung…</string>
+    <string name="aetherium_transport_test">Sichere Übertragung testen</string>
+    <string name="aetherium_transport_acoustic">Akustische (18-22 kHz) Übertragung verfügbar</string>
+    <string name="aetherium_transport_dov">Data-over-Voice-Übertragung verfügbar</string>
+    <string name="aetherium_transport_voip">VoIP-Übertragung verfügbar</string>
+
+    <string name="aetherium_popup_no_internet">Der Nutzer verwendet Aetherium Telefon. Der sichere Verschlüsselungsschlüssel wird jedoch nicht übertragen, weil Sie oder (%1$s) keinen WLAN-Zugang haben.</string>
+    <string name="aetherium_popup_success">Der Nutzer verwendet Aetherium Telefon. Selbst wenn über SIM angerufen wird, wird der Anruf verschlüsselt, sodass der Netzbetreiber nicht mithören kann.</string>
+    <string name="aetherium_popup_stale">Der Nutzer hat Aetherium Telefon verwendet, aber derzeit scheint er es nicht zu nutzen. Der Anruf wird nicht verschlüsselt.</string>
+</resources>

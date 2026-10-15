@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Chinese) -->
+    <string name="aetherium_secure_title">Aetherium 电话</string>
+    <string name="aetherium_contacts_label">联系人</string>
+    <string name="main_menu_aetherium">Aetherium 安全通话</string>
+
+    <string name="aetherium_status_ready">安全通话已开启</string>
+    <string name="aetherium_status_ready_desc">向其他 Aetherium 电话用户拨打的通话采用端到端加密，即使通过普通 SIM 连接也是如此。</string>
+    <string name="aetherium_status_offline">未登录</string>
+    <string name="aetherium_status_offline_desc">请登录 AetheriumServices，以便此电话可以交换加密密钥并进行安全通话。</string>
+    <string name="aetherium_account_id">账户：%1$s</string>
+    <string name="aetherium_account_missing">在此设备上未找到 AetheriumServices 账户。</string>
+
+    <string name="aetherium_pairing_header">配对</string>
+    <string name="aetherium_pairing_hint">配对码</string>
+    <string name="aetherium_generate_6">6 位数字代码</string>
+    <string name="aetherium_generate_60">60 个字符的代码</string>
+    <string name="aetherium_pair_action">使用此代码</string>
+    <string name="aetherium_enter_code">请先输入代码</string>
+    <string name="aetherium_pair_saved">配对码已保存</string>
+    <string name="aetherium_code_generated_6">您的代码：%1$s</string>
+    <string name="aetherium_code_generated_60">已生成 60 个字符的配对码</string>
+
+    <string name="aetherium_transport_header">传输</string>
+    <string name="aetherium_transport_idle">尚未进行任何传输测试。</string>
+    <string name="aetherium_transport_searching">正在寻找安全传输…</string>
+    <string name="aetherium_transport_test">测试安全传输</string>
+    <string name="aetherium_transport_acoustic">声学（18-22 kHz）传输可用</string>
+    <string name="aetherium_transport_dov">语音数据（Data-over-Voice）传输可用</string>
+    <string name="aetherium_transport_voip">VoIP 传输可用</string>
+
+    <string name="aetherium_popup_no_internet">该用户使用 Aetherium 电话。但由于您或 (%1$s) 无法访问 Wi-Fi，安全加密密钥未能传输。</string>
+    <string name="aetherium_popup_success">该用户使用 Aetherium 电话。即使通过 SIM 呼叫，也会被加密，运营商无法听到。</string>
+    <string name="aetherium_popup_stale">该用户曾使用 Aetherium 电话，但目前似乎未在使用。通话将不会被加密。</string>
+</resources>

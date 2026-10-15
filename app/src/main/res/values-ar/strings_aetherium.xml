@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Arabic) -->
+    <string name="aetherium_secure_title">Aetherium هاتف</string>
+    <string name="aetherium_contacts_label">جهات الاتصال</string>
+    <string name="main_menu_aetherium">مكالمات Aetherium الآمنة</string>
+
+    <string name="aetherium_status_ready">المكالمات الآمنة مفعّلة</string>
+    <string name="aetherium_status_ready_desc">المكالمات إلى مستخدمي Aetherium هاتف الآخرين مشفّرة من طرف إلى طرف، حتى عند إجرائها عبر اتصال SIM عادي.</string>
+    <string name="aetherium_status_offline">لم تسجّل الدخول</string>
+    <string name="aetherium_status_offline_desc">سجّل الدخول إلى AetheriumServices حتى يتمكن هذا الهاتف من تبادل مفاتيح التشفير وإجراء مكالمات آمنة.</string>
+    <string name="aetherium_account_id">الحساب: %1$s</string>
+    <string name="aetherium_account_missing">لم يتم العثور على حساب AetheriumServices على هذا الجهاز.</string>
+
+    <string name="aetherium_pairing_header">الاقتران</string>
+    <string name="aetherium_pairing_hint">رمز الاقتران</string>
+    <string name="aetherium_generate_6">رمز من 6 أرقام</string>
+    <string name="aetherium_generate_60">رمز من 60 حرفًا</string>
+    <string name="aetherium_pair_action">استخدام هذا الرمز</string>
+    <string name="aetherium_enter_code">أدخل رمزًا أولاً</string>
+    <string name="aetherium_pair_saved">تم حفظ رمز الاقتران</string>
+    <string name="aetherium_code_generated_6">رمزك: %1$s</string>
+    <string name="aetherium_code_generated_60">تم إنشاء رمز اقتران من 60 حرفًا</string>
+
+    <string name="aetherium_transport_header">النقل</string>
+    <string name="aetherium_transport_idle">لم يُجرَ أي اختبار للنقل بعد.</string>
+    <string name="aetherium_transport_searching">جارٍ البحث عن نقل آمن…</string>
+    <string name="aetherium_transport_test">اختبار النقل الآمن</string>
+    <string name="aetherium_transport_acoustic">النقل الصوتي (18-22 كيلوهرتز) متاح</string>
+    <string name="aetherium_transport_dov">نقل البيانات عبر الصوت متاح</string>
+    <string name="aetherium_transport_voip">نقل VoIP متاح</string>
+
+    <string name="aetherium_popup_no_internet">المستخدم يستخدم Aetherium هاتف. لكن مفتاح التشفير الآمن لم يُنقل لأنك أنت أو (%1$s) لا تملكان وصولاً إلى wifi.</string>
+    <string name="aetherium_popup_success">المستخدم يستخدم Aetherium هاتف. حتى إذا اتُّصل به عبر SIM، فسيتم تشفيره فلا يمكن للمشغّل سماعه.</string>
+    <string name="aetherium_popup_stale">كان المستخدم يستخدم Aetherium هاتف، لكن يبدو أنه لا يستخدمه الآن. لن يتم تشفير المكالمة.</string>
+</resources>

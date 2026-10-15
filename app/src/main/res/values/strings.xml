@@ -117,7 +117,7 @@
     <string name="allow">Allow</string>
     <string name="always_warn">Show warning every time</string>
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="applicationLabel">Phone</string>
+    <string name="applicationLabel">Aetherium Phone</string>
     <string name="assisted_dialing_country_code_entry">Assisted dialing: Used country code +%1$s</string>
     <string name="assisted_dialing_country_code_entry_failure">Assisted dialing was used</string>
     <string name="assisted_dialing_setting_cc_category_title">Home country</string>
@@ -515,7 +515,7 @@
     <string name="listSingleContact">Single contact</string>
     <string name="list_filter_all_accounts">All contacts</string>
     <string name="list_filter_phones">All contacts with phone numbers</string>
-    <string name="main_activity_label">Phone</string>
+    <string name="main_activity_label">Aetherium Phone</string>
     <string name="main_menu_call_history">Call history</string>
     <string name="main_menu_clear_frequents">Clear frequents</string>
     <string name="main_remove_contact">Remove</string>

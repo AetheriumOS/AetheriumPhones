@@ -40,6 +40,7 @@ import androidx.annotation.RequiresPermission;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.content.ContextCompat;
 
+import com.fissy.dialer.aetherium.AetheriumCallStateReceiver;
 import com.fissy.dialer.common.LogUtil;
 import com.google.common.base.Optional;
 
@@ -262,7 +263,13 @@ public abstract class TelecomUtil {
      */
     public static boolean placeCall(Context context, Intent intent) {
         if (hasCallPhonePermission(context)) {
-            getTelecomManager(context).placeCall(intent.getData(), intent.getExtras());
+            // Remember the number being dialled so the Aetherium secure-call watcher can match the
+            // outgoing call even when the platform does not report it in the PHONE_STATE broadcast.
+            Uri data = intent.getData();
+            if (data != null && PhoneAccount.SCHEME_TEL.equals(data.getScheme())) {
+                AetheriumCallStateReceiver.setLastDialedNumber(data.getSchemeSpecificPart());
+            }
+            getTelecomManager(context).placeCall(data, intent.getExtras());
             return true;
         }
         return false;

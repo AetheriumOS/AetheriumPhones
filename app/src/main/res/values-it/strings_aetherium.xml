@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetherium secure calling (Italian) -->
+    <string name="aetherium_secure_title">Aetherium Telefono</string>
+    <string name="aetherium_contacts_label">Contatti</string>
+    <string name="main_menu_aetherium">Chiamate sicure Aetherium</string>
+
+    <string name="aetherium_status_ready">Le chiamate sicure sono attive</string>
+    <string name="aetherium_status_ready_desc">Le chiamate verso altri utenti di Aetherium Telefono sono cifrate end-to-end, anche quando passano su una normale connessione SIM.</string>
+    <string name="aetherium_status_offline">Accesso non effettuato</string>
+    <string name="aetherium_status_offline_desc">Accedi ad AetheriumServices così questo telefono può scambiare chiavi di cifratura ed effettuare chiamate sicure.</string>
+    <string name="aetherium_account_id">Account: %1$s</string>
+    <string name="aetherium_account_missing">Nessun account AetheriumServices trovato su questo dispositivo.</string>
+
+    <string name="aetherium_pairing_header">ABBINAMENTO</string>
+    <string name="aetherium_pairing_hint">Codice di abbinamento</string>
+    <string name="aetherium_generate_6">Codice a 6 cifre</string>
+    <string name="aetherium_generate_60">Codice di 60 caratteri</string>
+    <string name="aetherium_pair_action">Usa questo codice</string>
+    <string name="aetherium_enter_code">Inserisci prima un codice</string>
+    <string name="aetherium_pair_saved">Codice di abbinamento salvato</string>
+    <string name="aetherium_code_generated_6">Il tuo codice: %1$s</string>
+    <string name="aetherium_code_generated_60">Codice di abbinamento di 60 caratteri generato</string>
+
+    <string name="aetherium_transport_header">TRASPORTO</string>
+    <string name="aetherium_transport_idle">Nessun test di trasporto è stato ancora eseguito.</string>
+    <string name="aetherium_transport_searching">Ricerca di un trasporto sicuro…</string>
+    <string name="aetherium_transport_test">Prova il trasporto sicuro</string>
+    <string name="aetherium_transport_acoustic">Trasporto acustico (18-22 kHz) disponibile</string>
+    <string name="aetherium_transport_dov">Trasporto dati-su-voce disponibile</string>
+    <string name="aetherium_transport_voip">Trasporto VoIP disponibile</string>
+
+    <string name="aetherium_popup_no_internet">L\'utente usa Aetherium Telefono. Ma la chiave di cifratura sicura non viene trasferita perché tu o (%1$s) non avete accesso al wifi.</string>
+    <string name="aetherium_popup_success">L\'utente usa Aetherium Telefono. Anche se chiamato via SIM, sarà cifrato, così l\'operatore non potrà sentirlo.</string>
+    <string name="aetherium_popup_stale">L\'utente usava Aetherium Telefono, ma al momento sembra non usarlo. La chiamata non sarà cifrata.</string>
+</resources>
